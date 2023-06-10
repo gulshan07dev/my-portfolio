@@ -8,9 +8,9 @@ import Services from "./components/services";
 import Contact from "./components/contact";
 import Footer from "./components/footer";
 import Preloader from "./components/preloader";
-import "./css/style.css";
-import "./css/utilityclass.css";
-import "./css/blobz.min.css";
+import './css/style.css';
+import './css/utilityclass.css';
+import './css/blobz.min.css';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -24,21 +24,25 @@ function App() {
 
   return (
     <Router>
-      <Header />
-      {isLoading ? (
-        <Preloader />
-      ) : (
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/skills" element={<Skills />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-      )}
-      <Footer />
+      <>
+        {isLoading ? (
+          <Preloader />
+        ) : (
+          <>
+            <Header />
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/skills" element={<Skills />} />
+              <Route path="/projects" element={<Projects />} />
+              <Route path="/services" element={<Services />} />
+              <Route path="/contact" element={<Contact />} />
+            </Routes>
+            <Footer />
+          </>
+        )}
+      </>
     </Router>
   );
 }
 
-export default App;
+export default App; 
