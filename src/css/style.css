@@ -60,7 +60,7 @@ html {
 
     --skill-img: none;
 
-    --project-shadow: 0px 0px 15px #c9e9ff;
+    --project-shadow: 0px 0px 15px #00000013;
 
     --section-bg: #f5f5f5;
 
@@ -439,7 +439,8 @@ nav .logo {
     border-bottom: 2px solid #4c0bff;
     border-radius: 15px;
     width: 95vw;
-    overflow: scroll;
+    overflow-y: hidden;
+    overflow-x: scroll;
 }
 
 .project-filter button {
@@ -475,13 +476,15 @@ nav .logo {
 
 .project header {
     font-size: 1.1rem;
-    font-weight: 500;
+    font-weight: 600;
     color: var(--item-color);
     text-align: center;
     text-transform: capitalize;
     padding-bottom: 10px;
     width: 100%;
     border-bottom: 1px solid #00f7ff;
+    opacity: 0.9;
+    font-family: 'Roboto', sans-serif;
 }
 
 .project img {
@@ -494,11 +497,12 @@ nav .logo {
     justify-content: center;
     align-items: center;
     gap: 5px;
+    flex-wrap: wrap;
 }
 
 .technology li {
-    font-size: 14px;
-    padding: 5px 8px;
+    font-size: 12px;
+    padding: 5px 7px;
     background: #eeeeee;
     border-radius: 25px;
 }
@@ -517,20 +521,21 @@ nav .logo {
 
 .btn-container a {
     text-align: center;
-    padding: 10px;
+    padding: 12px;
     font-size: 15px;
     color: #c20000;
     background-color: #ffffff;
     width: 48%;
-    border-radius: 10px;
+    border-radius: 100px;
 }
 
 .btn-container a:first-child {
-    background: linear-gradient(#cfee47, #2effaf);
+    background: white;
+    box-shadow: 1px 1px 5px #ff1212;
 }
 
 .btn-container a:last-child {
-    background: linear-gradient(to right, #001a8d, #4771fa);
+    background: linear-gradient(to right, #8194ff, #003cff);
     color: #ffffff;
 }
 
@@ -966,16 +971,15 @@ footer p {
     }
 
     .project-filter {
-        gap: 5px;
-        padding: 15px 10px 10px 10px;
-        width: 98.5vw;
-        overflow-x: scroll;
-        overflow-y: hidden;
+        gap: 7px;
+        padding: 15px 0 10px 0;
+        width: 100vw; 
+        justify-content: center;
     }
 
     .project-filter button {
         font-size: 14px;
-        padding: 5px 7px;
+        padding: 10px;
     }
 
     .project header {

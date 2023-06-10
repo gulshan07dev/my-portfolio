@@ -1,20 +1,21 @@
 import React, { useState } from 'react';
-import {project1Image} from '../assets/project-1.png';
-import {project2Image} from '../assets/project-2.jpg';
-import {project3Image} from '../assets/project-3.jpg';
-import {project4Image} from '../assets/project-4.png';
-import {project5Image} from '../assets/project-5.png';
-import {project6Image} from '../assets/project-6.png';
-import {project7Image} from '../assets/project-7.png';
-import {project8Image} from '../assets/project-8.jpg';
-import {project9Image} from '../assets/project-9.jpg';
-import {project10Image} from '../assets/project-10.png';
-import {project11Image} from '../assets/project-11.png';
-import {project12Image} from '../assets/project-12.png';
-import {project13Image} from '../assets/project-13.png';
-import {project14Image} from '../assets/project-14.png';
-import {project15Image} from '../assets/project-15.png';
-import {project16Image} from '../assets/project-16.png';
+import project1Image from '../assists/project-1.png';
+import project2Image from '../assists/project-2.jpg';
+import project3Image from '../assists/project-3.jpg';
+import project4Image from '../assists/project-4.png';
+import project5Image from '../assists/project-5.png';
+import project6Image from '../assists/project-6.png';
+import project7Image from '../assists/project-7.png';
+import project8Image from '../assists/project-8.jpg';
+import project9Image from '../assists/project-9.jpg';
+import project10Image from '../assists/project-10.png';
+import project11Image from '../assists/project-11.png';
+import project12Image from '../assists/project-12.png';
+import project13Image from '../assists/project-13.png';
+import project14Image from '../assists/project-14.png';
+import project15Image from '../assists/project-15.png';
+import project16Image from '../assists/project-16.png';
+import project17Image from '../assists/project-17.png';
 
 console.log(project1Image);
 const Projects = () => {
@@ -180,6 +181,16 @@ const Projects = () => {
                 source: 'https://github.com/gulshan07dev/github-profile-searcher',
                 live: 'https://github-profile-search.gulshan07dev.repl.co'
             }
+        },
+        {
+            category: "React Js",
+            technology: ["HTML", "CSS", "JS", "ReactJs"],
+            name: 'portfolio website',
+            image: project17Image,
+            links: {
+                source: '',
+                live: ''
+            }
         }
     ];
 
@@ -193,7 +204,7 @@ const Projects = () => {
         return filteredProjects.map((project, index) => (
             <div className="project item flex slide-left-right" key={index}>
                 <header>{project.name}</header>
-                <img src={project.image} alt={`Project ${index + 1} Image`} />
+                <img src={project.image} alt={`project${index+1}Image`} />
                 <ul className="flex technology">
                     {project.technology.map((tech, techIndex) => (
                         <li key={techIndex}>{tech}</li>
