@@ -188,8 +188,8 @@ const Projects = () => {
             name: 'portfolio website',
             image: project17Image,
             links: {
-                source: '',
-                live: ''
+                source: 'https://github.com/gulshan07dev/my-portfolio',
+                live: 'https://my-portfolio-gulshan07dev.vercel.app/'
             }
         }
     ];
