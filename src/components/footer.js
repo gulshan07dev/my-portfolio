@@ -28,7 +28,7 @@ const Footer = () => {
 
              {/* adding arrow top   */}
             <div>
-                <a href="#body"><i className="arrow-top fa-sharp fa-solid fa-arrow-up fa-bounce"></i></a>
+                <a href="#"><i className="arrow-top fa-sharp fa-solid fa-arrow-up fa-bounce"></i></a>
             </div>
         </footer>
     )
