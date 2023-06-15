@@ -1,16 +1,16 @@
 import React, { useEffect } from 'react';
-import skill1 from "../assists/c.png";
-import skill2 from "../assists/cpp.png";
-import skill3 from "../assists/python.svg";
-import skill5 from "../assists/html5.svg";
-import skill6 from "../assists/css.svg";
-import skill7 from "../assists/js.svg";
-import skill8 from "../assists/node.svg";
-import skill9 from "../assists/react.svg";
-import skill10 from "../assists/git.svg";
-import skill11 from "../assists/github.svg";
-import skill12 from "../assists/mysql logo.png";
-import skill13 from "../assists/mongodb logo.png";
+import skill1 from "../assists/skills-img/c.png";
+import skill2 from "../assists/skills-img/cpp.png";
+import skill3 from "../assists/skills-img/python.svg";
+import skill5 from "../assists/skills-img/html5.svg";
+import skill6 from "../assists/skills-img/css.svg";
+import skill7 from "../assists/skills-img/js.svg";
+import skill8 from "../assists/skills-img/node.svg";
+import skill9 from "../assists/skills-img/react.svg";
+import skill10 from "../assists/skills-img/git.svg";
+import skill11 from "../assists/skills-img/github.svg";
+import skill12 from "../assists/skills-img/mysql logo.png";
+import skill13 from "../assists/skills-img/mongodb logo.png";
 
 const Skills = () => {
     useEffect(() => {

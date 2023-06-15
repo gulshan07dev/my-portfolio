@@ -459,10 +459,11 @@ nav .logo {
 
 .project {
     width: 300px;
-    height: 350px;
+    height: 32%;
     padding: 10px 0 0 0;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     padding: 10px;
     gap: 0;
     box-shadow: var(--project-shadow);
@@ -475,16 +476,24 @@ nav .logo {
 
 
 .project header {
+    padding-bottom: 10px;
+    width: 100%;
     font-size: 1.1rem;
     font-weight: 600;
     color: var(--item-color);
     text-align: center;
     text-transform: capitalize;
-    padding-bottom: 10px;
-    width: 100%;
-    border-bottom: 1px solid #00f7ff;
     opacity: 0.9;
+    border-bottom: 1px solid #00f7ff;
     font-family: 'Roboto', sans-serif;
+}
+
+.main-part {
+    width: 100%;
+    height: fit-content;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
 }
 
 .project img {
@@ -493,25 +502,58 @@ nav .logo {
     border-radius: 10px;
 }
 
+.project .up-date {
+    font-size: 12px;
+    opacity: 0.8;
+    color: #ffffff;  
+    padding: 4px 6px;
+    border-radius: 100px;
+    background: #ff0037;
+    font-weight: 600;
+    transform: translateY(-30px);
+    position: absolute;
+    left: 0;
+    bottom: -28px;
+}
+
 .technology {
     justify-content: center;
     align-items: center;
     gap: 5px;
     flex-wrap: wrap;
+    align-self: flex-start;
 }
 
 .technology li {
     font-size: 12px;
-    padding: 5px 7px;
+    padding: 4px 6px;
     background: #eeeeee;
     border-radius: 25px;
+    color: #050316;
 }
 
 .technology::before {
     content: 'Technology: ';
-    font-size: 17px;
+    font-size: 16px;
+    opacity: 0.9;
     color: var(--menu-color);
     font-weight: 600;
+}
+
+.project .description::before {
+    content: 'Desc: ';
+    font-size: 16px;
+    opacity: 0.9;
+    color: var(--menu-color);
+    font-weight: 600;
+}
+
+.project .description {
+    font-size: 14px;
+    color: var(--menu-color);
+    text-transform: capitalize;
+    opacity: 0.9;
+    align-self: flex-start;
 }
 
 .btn-container {
@@ -557,7 +599,7 @@ nav .logo {
     width: 100%;
     padding: 10px 20px;
     border-top-left-radius: 100px;
-    border-bottom-left-radius: 100px; 
+    border-bottom-left-radius: 100px;
 }
 
 #contact form {
@@ -973,7 +1015,7 @@ footer p {
     .project-filter {
         gap: 7px;
         padding: 15px 0 10px 0;
-        width: 100vw; 
+        width: 100vw;
         justify-content: center;
     }
 
@@ -1011,7 +1053,7 @@ footer p {
     #contact form {
         width: 100%;
         padding: 15px 20px;
-        background: var(--item-bg); 
+        background: var(--item-bg);
     }
 
     footer {
