@@ -5,7 +5,7 @@ const Contact = () => {
     return (
         <section id="contact" className="section flex">
             <header className="section-heading">Contact - <span>me</span></header>
-            <div className="flex">
+            <div className="flex contact-container">
                 <form>
                     <h2>Get In Touch</h2>
                     <label for="name">Name </label>

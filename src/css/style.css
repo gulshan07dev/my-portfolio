@@ -15,7 +15,7 @@
 }
 
 body {
-    background: var(--section-bg);
+    background: var(--body-bg);
     transition: background .5s;
     overflow-x: hidden;
     min-height: 100vh;
@@ -30,6 +30,8 @@ html {
 /* variable */
 
 :root {
+    --body-bg: #f5f5f5;
+
     --hero-bg: #ececec;
 
     --right-section-heading: #0004ff;
@@ -60,9 +62,10 @@ html {
 
     --skill-img: none;
 
-    --project-shadow: 0px 0px 15px #00000013;
+    --project-shadow: 0.2px 0.2px 20px #0000000c;
 
-    --section-bg: #f5f5f5;
+    /* --section-bg: #f5f5f5; */
+    --section-bg: linear-gradient(#f5f5f5, #f5f5f5, #f5f5f5, #d7ffd7, #f5f5f5);
 
     --section-heading: #ffffff;
 
@@ -97,6 +100,7 @@ html {
 /* dark theme */
 
 .dark-theme {
+    --body-bg: #161623;
 
     --hero-bg: linear-gradient(#1c1451, #161623);
 
@@ -108,7 +112,8 @@ html {
 
     --menu-side-bar: #1d232f;
 
-    --nav-bg: #161623f6;
+    /* --nav-bg: #161623f6; */
+    --nav-bg: #232333f5;
 
     --nav-shadow: #000000b7;
 
@@ -128,9 +133,10 @@ html {
 
     --skill-img: invert();
 
-    --project-shadow: 0px 0px 15px #000000;
+    --project-shadow: 0.5px 0.5px 20px #0000006e;
 
-    --section-bg: #161623;
+    /* --section-bg: #161623; */
+    --section-bg: linear-gradient(#161623,#161623, #132325,#161623);
 
     --section-heading: #ffffff;
 
@@ -434,7 +440,7 @@ nav .logo {
     justify-content: center;
     align-items: center;
     gap: 15px;
-    background: var(--section-bg);
+    background: transparent;
     padding: 20px 20px 15px 20px;
     border-bottom: 2px solid #4c0bff;
     border-radius: 15px;
@@ -590,15 +596,16 @@ nav .logo {
     gap: 10px;
 }
 
-#contact div {
+#contact .contact-container {
     justify-content: space-between;
     align-items: center;
     flex-direction: row-reverse;
-    background: var(--section-bg);
+    background: transparent;
     width: 100%;
     padding: 10px 20px;
     border-top-left-radius: 100px;
     border-bottom-left-radius: 100px;
+    backdrop-filter: blur(10px);
 }
 
 #contact form {
@@ -669,11 +676,11 @@ nav .logo {
     background-color: #008b00;
 }
 
-#contact div .contact-bg {
+.contact-container .contact-bg {
     width: 60%;
 }
 
-#contact div .contact-bg img {
+.contact-container .contact-bg img {
     width: 100%;
 }
 
@@ -879,7 +886,7 @@ footer p {
         gap: 30px;
     }
 
-    #contact div {
+    #contact .contact-container {
         width: 98vw;
         flex-direction: column-reverse;
         padding: 0;
@@ -887,11 +894,11 @@ footer p {
     }
 
 
-    #contact div .contact-bg {
+    .contact-container .contact-bg {
         width: 100%;
     }
 
-    #contact div .contact-bg img {
+    .contact-container .contact-bg img {
         width: 100%;
     }
 
@@ -1027,7 +1034,7 @@ footer p {
         font-size: 16px;
     }
 
-    #contact div {
+    #contact .contact-container {
         width: 95vw;
         padding: 0 0 0 0;
         border-bottom-left-radius: 15px;
