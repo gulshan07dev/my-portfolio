@@ -504,11 +504,10 @@ nav .logo {
 
 .project .up-date {
     font-size: 12px;
-    opacity: 0.8;
     color: #ffffff;  
     padding: 4px 6px;
     border-radius: 100px;
-    background: #ff0037;
+    background: linear-gradient(to right,#303030, #0000ee, #0300a3);
     font-weight: 600;
     transform: translateY(-30px);
     position: absolute;
