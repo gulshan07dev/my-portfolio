@@ -35,7 +35,7 @@ const Projects = () => {
       desc: "Simple and responsive website layout showcasing web development skills.",
       technology: ["HTML", "CSS"],
       name: "Simple Website Layout",
-      date: "2023, 1, 13",
+      date: "2023, 1, 5",
       image: simpleWebsite,
       links: {
         source:
@@ -48,7 +48,7 @@ const Projects = () => {
       desc: "Profile card resembling social media profiles, highlighting CSS expertise.",
       technology: ["HTML", "CSS"],
       name: "Profile Card",
-      date: "2023, 2, 15",
+      date: "2023, 1, 15",
       image: profileCard,
       links: {
         source:
@@ -61,7 +61,7 @@ const Projects = () => {
       desc: "Visually stunning website for a photographer, demonstrating design skills.",
       technology: ["HTML", "CSS"],
       name: "Photographer Website",
-      date: "2023, 3, 1",
+      date: "2023, 1, 18",
       image: photographerWebsite,
       links: {
         source:
@@ -74,7 +74,7 @@ const Projects = () => {
       desc: "Interactive shopping website with a modern UI, showcasing front-end development abilities.",
       technology: ["HTML", "CSS"],
       name: "Shopping Website",
-      date: "2023, 3, 15",
+      date: "2023, 2, 1",
       image: shoppingWebsite,
       links: {
         source:
@@ -87,7 +87,7 @@ const Projects = () => {
       desc: "Captivating landing page for Beats, highlighting attention to detail in web design.",
       technology: ["HTML", "CSS"],
       name: "Beats Landing Page",
-      date: "2023, 3, 28",
+      date: "2023, 3, 15",
       image: beatsWebsite,
       links: {
         source:
@@ -100,7 +100,7 @@ const Projects = () => {
       desc: "Sleek and modern real estate website, showcasing ability to create engaging web experiences.",
       technology: ["HTML", "CSS"],
       name: "Real Estate",
-      date: "2023, 3, 30",
+      date: "2023, 3, 20",
       image: realEstateWebsite,
       links: {
         source: "",
@@ -126,7 +126,7 @@ const Projects = () => {
       desc: "Simple calculator app with [+,-,*,/,%] operations, solving modulus operator problem.",
       technology: ["HTML", "CSS", "JS"],
       name: "simple calculator",
-      date: "2023, 5, 1",
+      date: "2023, 2, 5",
       image: calculator,
       links: {
         source:
@@ -139,7 +139,7 @@ const Projects = () => {
       desc: "Days calculator app for calculating specific dates, demonstrating problem-solving skills.",
       technology: ["HTML", "CSS", "JS"],
       name: "Days Calculator",
-      date: "2023, 4, 5",
+      date: "2023, 2, 31",
       image: dayCalculator,
       links: {
         source:
@@ -152,7 +152,7 @@ const Projects = () => {
       desc: "Age calculator app to calculate your age, showcasing ability to handle date calculations.",
       technology: ["HTML", "CSS", "JS"],
       name: "Age Calculator",
-      date: "2023, 4, 6",
+      date: "2023, 2, 31",
       image: ageCalculator,
       links: {
         source:
@@ -165,7 +165,7 @@ const Projects = () => {
       desc: "Guess a Number game for playing and having fun, showcasing ability to create interactive games.",
       technology: ["HTML", "CSS", "JS"],
       name: "Game - Guess A Number",
-      date: "2023, 3, 25",
+      date: "2023, 2, 25",
       image: guessNumber,
       links: {
         source:
@@ -178,7 +178,7 @@ const Projects = () => {
       desc: "Quiz application to play and enhance knowledge, showcasing ability to create interactive quizzes.",
       technology: ["HTML", "CSS", "JS"],
       name: "Quiz App",
-      date: "2023, 5, 15",
+      date: "2023, 5, 7",
       image: quizApp,
       links: {
         source:
@@ -191,7 +191,7 @@ const Projects = () => {
       desc: "YouTube Video thumbnail downloader website, demonstrating knowledge of web scraping.",
       technology: ["HTML", "CSS", "JS"],
       name: "Yt - Thumbnail Downloader",
-      date: "2023, 4, 11",
+      date: "2023, 3, 6",
       image: ytThumbnailDownloader,
       links: {
         source:
@@ -204,7 +204,7 @@ const Projects = () => {
       desc: "Tic Tac Toe game, showcasing ability to create interactive games.",
       technology: ["HTML", "CSS", "JS"],
       name: "Game - Tic Tac Toe",
-      date: "2023, 4, 17",
+      date: "2023, 3, 17",
       image: tikTakToe,
       links: {
         source:
@@ -217,7 +217,7 @@ const Projects = () => {
       desc: "Mini photo editor to explore various photo editing functionalities with ease.",
       technology: ["HTML", "CSS", "JS"],
       name: "Mini Photo Editor",
-      date: "2023, 4, 23",
+      date: "2023, 4, 25",
       image: photoEditor,
       links: {
         source:
@@ -230,7 +230,7 @@ const Projects = () => {
       desc: "GitHub profile searcher to explore GitHub user profiles and their repositories.",
       technology: ["HTML", "CSS", "JS"],
       name: "GitHub Profile Searcher",
-      date: "2023, 5, 25",
+      date: "2023, 4, 29",
       image: githubProfileSearcher,
       links: {
         source: "https://github.com/gulshan07dev/github-profile-searcher",
