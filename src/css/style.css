@@ -439,14 +439,13 @@ nav .logo {
 .project-filter {
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 15px;
     background: transparent;
     padding: 20px 20px 15px 20px;
     border-bottom: 2px solid #4c0bff;
     border-radius: 15px;
-    width: 95vw;
-    overflow-y: hidden;
-    overflow-x: scroll;
+    width: 95vw; 
 }
 
 .project-filter button {
@@ -1027,7 +1026,7 @@ footer p {
 
     .project-filter button {
         font-size: 14px;
-        padding: 10px;
+        padding: 8.5px;
     }
 
     .project header {
