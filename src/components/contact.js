@@ -8,6 +8,7 @@ const Contact = () => {
             <div className="flex contact-container">
                 <form>
                     <h2>Get In Touch</h2>
+                    <p>Please add your information below to stay in touch.</p>
                     <label for="name">Name </label>
                     <input type="text" id="name" placeholder="enter your name.." required />
                     <label for="number">Phone no </label>
