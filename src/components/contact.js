@@ -15,7 +15,7 @@ const Contact = () => {
                     <label for="email">Email </label>
                     <input type="email" id="email" placeholder="enter your email id.." required />
                     <label for="message">Message</label>
-                    <textarea name="" id="message" cols="30" rows="3" placeholder="enter your msg.." required></textarea>
+                    <textarea name="" id="message" cols="30" rows="2" placeholder="enter your msg.." required></textarea>
                     <button className="btn-submit" type="submit" value="submit">send</button>
                 </form>
                 <div className="contact-bg">
