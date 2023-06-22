@@ -104,7 +104,7 @@ html {
 .dark-theme {
     --body-bg: #161623;
 
-    --hero-bg: linear-gradient(#1c1451, #161623);
+    --hero-bg: linear-gradient(70deg, #27182f, transparent);
 
     --right-section-heading: #ff6767;
 
@@ -163,6 +163,7 @@ nav {
     position: sticky;
     top: 0;
     z-index: 99;
+    backdrop-filter: blur(10px) brightness(100%);
 }
 
 .logo img {
@@ -375,13 +376,13 @@ nav .logo {
 /* skills section */
 
 #skills {
-    padding-inline: 15vw;
+    padding-inline: 10vw;
 }
 
 
 .skill {
-    height: 150px;
-    width: 150px;
+    height: 160px;
+    width: 160px;
     position: relative;
     justify-content: center;
     border-radius: 50%;
@@ -392,8 +393,8 @@ nav .logo {
 .skill::before {
     content: "";
     position: absolute;
-    height: 80%;
-    width: 80%;
+    height: 75%;
+    width: 75%;
     background-color: var(--item-bg);
     border-radius: 50%;
     z-index: 1;
@@ -401,7 +402,7 @@ nav .logo {
 }
 
 .skill header {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 800;
     color: var(--item-color);
     z-index: 2;
@@ -412,11 +413,11 @@ nav .logo {
     height: 15px;
     width: 10px;
     position: absolute;
-    bottom: 0;
+    bottom: 2.7px;
     align-self: center;
     font-size: 14px;
-    font-weight: 600;
-    color: #001cb5;
+    font-weight: 700;
+    color: #191e3ac9;
     text-shadow: 0.4px 0.4px 5px #00ff00;
 }
 
@@ -735,14 +736,18 @@ footer {
     gap: 50px;
 }
 
-footer p {
+footer p,
+.links li:first-child {
     color: #ffffff;
     font-size: 35px;
-    font-weight: 800;
-    font-family: 'Courier New', Courier, monospace;
-    letter-spacing: 1px;
+    text-transform: lowercase;
+    font-weight: 1000;
+    line-height: 1.3;
+    letter-spacing: -1px;
+    font-family: 'Roboto', sans-serif;
     text-decoration: underline;
     text-shadow: 1.5px 2px 3px #000000;
+    cursor: default;
 }
 
 /* social icons */
@@ -753,19 +758,18 @@ footer p {
 
 .social-icons i {
     font-size: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-weight: 700;
     padding: 10px;
     background-color: #ffffff;
-    border-radius: 20px;
+    border-radius: 50%;
     transition: .4s;
-    box-shadow: 2px 2px 1px #ffffff, -2px -2px 1px #ffffff;
+    box-shadow: 1px 1px 1px #ffffff, -1px -1px 1px #ffffff;
 }
 
-.social-icons a:hover {
-    transform: translateY(-10px);
+.social-icons i:hover {
+    background: #3247c0;
+    color: #ffffff;
+    box-shadow: 1px 1px 1px #202aad, -1px -1px 1px #2b38ad;
 }
 
 
@@ -783,16 +787,6 @@ footer p {
     font-size: 22px;
     text-shadow: 1px 1px 1px #ffffff;
     font-family: 'Cedarville Cursive', cursive;
-}
-
-
-.links li:first-child {
-    font-weight: 900;
-    font-family: 'Courier New', Courier, monospace;
-    color: #c7fdff;
-    text-decoration: underline;
-    font-size: 30px;
-    text-shadow: 1.5px 2px 3px #000000;
 }
 
 .arrow-top {
@@ -831,6 +825,7 @@ footer p {
         padding: 36px 20px;
         width: 200px;
         height: 100vh;
+        overflow-y: scroll;
         transition: 0.8s;
         z-index: 90;
     }
@@ -905,7 +900,7 @@ footer p {
     }
 
     #skills {
-        padding-inline: 7vw;
+        padding-inline: 3vw;
     }
 
     #contact {
@@ -1023,16 +1018,16 @@ footer p {
     }
 
     .skill {
-        height: 130px;
-        width: 130px;
+        height: 140px;
+        width: 140px;
     }
 
     .skill header {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .DSA {
-        height: 130px;
+        height: 140px;
     }
 
     .DSA h3 {
@@ -1116,17 +1111,6 @@ footer p {
         gap: 15px;
     }
 
-    .social-icons i {
-        font-size: 25px;
-        height: 40px;
-        width: 40px;
-    }
-
-    .social-icons a:hover {
-        transform: translateY(-10px);
-    }
-
-
     .links {
         gap: 10px;
     }
@@ -1138,8 +1122,13 @@ footer p {
 }
 
 @media screen and (max-width: 425px) {
+    .logo img {
+        width: 90%;
+    }
+
     nav {
         padding-left: 20px;
+        backdrop-filter: none;
     }
 
     .menu {

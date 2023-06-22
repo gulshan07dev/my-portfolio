@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { NavLink, useLocation } from "react-router-dom";
 
 const Footer = () => {
     return (
@@ -19,9 +20,10 @@ const Footer = () => {
                 <div className="link-container">
                     <ul className="flex links">
                         <li>Link</li>
-                        <a href="#skills">my skills</a>
-                        <a href="#projects">my projects</a>
-                        <a href="#contact">contact Us</a>
+                        <NavLink to="/skills">my skills</NavLink>
+                        <NavLink to="/projects">my projects</NavLink>
+                        <NavLink to="/services">my services</NavLink>
+                        <NavLink to="/contact">contact Us</NavLink>
                     </ul>
                 </div>
             </div>
