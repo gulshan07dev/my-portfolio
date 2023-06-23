@@ -58,6 +58,8 @@ html {
 
     --item-color: #272727;
 
+    --about-color: linear-gradient(#e70000, #0f0fbe, var(--item-color), #ffb3bf);
+
     --item-bg: #ffffff;
 
     --skill-img: none;
@@ -128,6 +130,8 @@ html {
     --hero-para: #f6e6e6;
 
     --hero-para-span: #00ff55;
+
+    --about-color: linear-gradient(#b2f021, #6767ff, var(--item-color), #8790e4);
 
     --item-color: #ffffff;
 
@@ -361,12 +365,17 @@ nav .logo {
 #profile .about-me {
     font-family: monospace;
     font-size: 22px;
-    font-weight: 500;
+    font-weight: bold;
     letter-spacing: 1.2px;
     word-spacing: 3px;
-    text-transform: capitalize;
-    color: var(--item-color);
+    line-height: 30px;
+    text-transform: capitalize; 
     width: 80%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: transparent;
+    background-clip: text;
+    background: var(--about-color);
+    -webkit-background-clip: text;
 }
 
 #profile .about-me span {
@@ -425,18 +434,13 @@ nav .logo {
     font-size: 12px;
     color: var(--item-color);
     z-index: 2;
+    text-align: center;
 }
 
 .skill img {
     width: 50%;
     z-index: 2;
     filter: var(--skill-img);
-}
-
-.DSA {
-    font-size: 16px;
-    z-index: 2;
-    text-align: center;
 }
 
 /* project section */
@@ -1006,7 +1010,8 @@ footer p,
     #profile .about-me {
         width: 100%;
         align-self: self-start;
-        font-size: 17px;
+        font-size: 18px;
+        line-height: 25px;
     }
 
     #profile .profile-img {
@@ -1024,16 +1029,7 @@ footer p,
 
     .skill header {
         font-size: 12px;
-    }
-
-    .DSA {
-        height: 140px;
-    }
-
-    .DSA h3 {
-        font-size: 7.4px;
-        font-weight: 600;
-    }
+    } 
 
     .project-container {
         gap: 40px;
