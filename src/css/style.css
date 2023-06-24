@@ -369,7 +369,7 @@ nav .logo {
     letter-spacing: 1.2px;
     word-spacing: 3px;
     line-height: 30px;
-    text-transform: capitalize; 
+    text-transform: capitalize;
     width: 80%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: transparent;
@@ -387,7 +387,6 @@ nav .logo {
 #skills {
     padding-inline: 10vw;
 }
-
 
 .skill {
     height: 160px;
@@ -442,6 +441,7 @@ nav .logo {
     z-index: 2;
     filter: var(--skill-img);
 }
+
 
 /* project section */
 
@@ -796,6 +796,7 @@ footer p,
 .arrow-top {
     font-size: 70px;
     color: #ffb1b1;
+    background: none;
 }
 
 /* media query */
@@ -1029,7 +1030,7 @@ footer p,
 
     .skill header {
         font-size: 12px;
-    } 
+    }
 
     .project-container {
         gap: 40px;

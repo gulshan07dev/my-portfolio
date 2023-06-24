@@ -1,4 +1,6 @@
 import React, { useEffect } from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 import skill1 from "../assists/skills-img/c.png";
 import skill2 from "../assists/skills-img/cpp.png";
 import skill3 from "../assists/skills-img/python.svg";
@@ -64,8 +66,12 @@ const Skills = () => {
     return (
       <div className="skill item flex">
         <header>{name}</header>
+        {desc ? (
+          <h3>({desc})</h3>
+        ) : (
+          <LazyLoadImage src={img} alt={`${name} Image`} />
+        )}
         <div className="skill-percent"></div>
-        {desc ? <h3>({desc})</h3> : <img src={img} alt={`${name} Image`} />}
       </div>
     );
   };
