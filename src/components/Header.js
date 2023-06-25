@@ -6,6 +6,17 @@ const Header = () => {
   const [darkMode, setDarkMode] = useState(false);
   const location = useLocation();
 
+  function scrollTop() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
+  useEffect(() => {
+    const menu = document.querySelectorAll(".menu a");
+    menu.forEach((el) => {
+      el.addEventListener("click", scrollTop);
+    });
+  }, []);
+
   useEffect(() => {
     const storedDarkMode = localStorage.getItem("darkMode");
     setDarkMode(storedDarkMode === "true");
@@ -61,35 +72,35 @@ const Header = () => {
         <img src={logo} alt="logo" />
       </div>
       <div className="menu flex">
-        <NavLink to="/" exact='true' className="flex">
+        <NavLink to="/" exact="true" className="flex">
           <i className="fa fa-solid fa-home"></i>
           <p>Home</p>
         </NavLink>
 
         <div className="line"></div>
 
-        <NavLink to="/skills" className="flex" >
+        <NavLink to="/skills" className="flex">
           <i className="fa-sharp fa-solid fa-person-chalkboard"></i>
           <p>Skills</p>
         </NavLink>
 
         <div className="line"></div>
 
-        <NavLink to="/projects" className="flex" >
+        <NavLink to="/projects" className="flex">
           <i className="fa-sharp fa-solid fa-diagram-project"></i>
           <p>Projects</p>
         </NavLink>
 
         <div className="line"></div>
 
-        <NavLink to="/services" className="flex"  >
+        <NavLink to="/services" className="flex">
           <i className="fa-sharp fa-solid fa-user"></i>
           <p>Services</p>
         </NavLink>
 
         <div className="line"></div>
 
-        <NavLink to="/contact" className="flex"  >
+        <NavLink to="/contact" className="flex">
           <i className="fa-sharp fa-solid fa-user"></i>
           <p>Contact US</p>
         </NavLink>

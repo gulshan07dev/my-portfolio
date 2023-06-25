@@ -106,8 +106,9 @@ html {
 .dark-theme {
     --body-bg: #161623;
 
-    --hero-bg: linear-gradient(70deg, #27182f, transparent);
-
+    /* --hero-bg: linear-gradient(70deg, #27182f, transparent); */
+    --hero-bg: linear-gradient(75deg,#000000,#161655,#002875);
+    
     --right-section-heading: #ff6767;
 
     --dark-icon: #ffffff;
@@ -719,8 +720,7 @@ nav .logo {
 /* footer */
 footer {
     background: #08111d;
-    color: wheat;
-    height: 50vh;
+    color: #f5deb3; 
     justify-content: space-evenly;
     align-items: center;
     gap: 45px;
@@ -780,8 +780,7 @@ footer p,
 .links {
     flex-direction: column;
     gap: 15px;
-    font-size: 16px;
-    cursor: pointer;
+    font-size: 16px; 
 }
 
 .links a {
@@ -1069,7 +1068,7 @@ footer p,
 
 
     footer {
-        border-radius: 30% 40% 0 0;
+        border-radius: 1% 40% 0 1%;
         padding: 60px 0 120px 0;
     }
 
@@ -1080,28 +1079,28 @@ footer p,
         gap: 10px;
         /* background: var(--item-bg); */
     }
-
-    footer {
-        height: 60vh;
-    }
-
+ 
     .footer-parts {
         flex-direction: column;
     }
 
-    footer {
-        gap: 10px;
-        border-top-left-radius: 15%;
-    }
-
-
     .social-icons-container {
         gap: 25px;
+        padding: 0 0 0 50px;
     }
 
-    footer p {
+    .social-icons i {
+        font-size: 20px;
+        padding: 7px;
+    }
+
+    footer p, .links li:first-child {
         font-size: 25px;
-        font-weight: 700;
+        letter-spacing: 2px;
+    }
+
+    .links a {
+        font-size: 17px;
     }
 
     .social-icons {
@@ -1113,7 +1112,10 @@ footer p,
     }
 
     .arrow-top {
-        font-size: 100px;
+        font-size: 70px; 
+        position: relative;
+        top: 100px;
+        right: 60px;
     }
 
 }

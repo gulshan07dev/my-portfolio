@@ -31,10 +31,10 @@ const Footer = () => {
         <div className="link-container">
           <ul className="flex links">
             <li>Link</li>
-            <NavLink to="/skills">my skills</NavLink>
-            <NavLink to="/projects">my projects</NavLink>
-            <NavLink to="/services">my services</NavLink>
-            <NavLink to="/contact">contact Us</NavLink>
+            <NavLink to="/skills" onClick={handleArrowTop}>my skills</NavLink>
+            <NavLink to="/projects" onClick={handleArrowTop}>my projects</NavLink>
+            <NavLink to="/services" onClick={handleArrowTop}>my services</NavLink>
+            <NavLink to="/contact" onClick={handleArrowTop}>contact Us</NavLink>
           </ul>
         </div>
       </div>
