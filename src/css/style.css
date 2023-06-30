@@ -16,7 +16,6 @@
 
 body {
     background: var(--body-bg);
-    width: 100vw;
     transition: background .5s;
     overflow-x: hidden;
     min-height: 100vh;
@@ -111,20 +110,20 @@ html {
 
     /* --hero-bg: linear-gradient(70deg, #27182f, transparent); */
     /* --hero-bg: linear-gradient(75deg,#000000,#161655,#002875); */
-    --hero-bg: linear-gradient(100deg, #1d2530, #2d2d31, #000000);
-
+    --hero-bg: linear-gradient(100deg,#1d2530, #2d2d31, #000000);
+    
     --right-section-heading: #ff6767;
 
     --dark-icon: #ffffff;
 
     --dark-btn: "\f185";
 
-    --menu-side-bar: #00050e;
+    --menu-side-bar: #1d232f;
 
     /* --nav-bg: #161623f6; */
     --nav-bg: #232333f5;
 
-    --nav-icon-color: #666d72;
+    --nav-icon-color: #acaeaf;
 
     --nav-shadow: #000000b7;
 
@@ -979,7 +978,7 @@ footer p,
 
     .menu a.active {
         border: none;
-    }
+    } 
 
     .left-section {
         padding-top: 15px;
@@ -1146,9 +1145,9 @@ footer p,
         right: 0;
         left: 0;
         bottom: 0;
-        justify-content: space-evenly;
+        justify-content: space-evenly; 
         box-shadow: none;
-        border-top: 1px solid #91919177;
+        border-top: 1px solid #8b8b8b83;
         padding: 2px 0;
         width: 100vw;
         height: 55px;
@@ -1172,7 +1171,7 @@ footer p,
         font-size: 22px;
         transition: 0.1s;
     }
-
+ 
     .menu a p {
         font-size: 10px;
         display: inline;
@@ -1180,10 +1179,9 @@ footer p,
         text-overflow: ellipsis;
         font-weight: 600;
     }
-
+ 
     .menu a.active {
-        color: var(--menu-active-color);
-        border: none;
+        color: var(--menu-active-color); 
     }
 
     #dark-icon {
