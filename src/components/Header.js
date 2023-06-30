@@ -94,7 +94,7 @@ const Header = () => {
         <div className="line"></div>
 
         <NavLink to="/services" className="flex">
-          <i className="fa-sharp fa-solid fa-user"></i>
+          <i class="fa-solid fa-desktop"></i>
           <p>Services</p>
         </NavLink>
 

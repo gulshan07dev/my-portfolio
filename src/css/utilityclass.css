@@ -51,6 +51,7 @@ textarea {
     padding: 20px 50px 0 50px;
     flex-direction: column;
     background: var(--section-bg);
+    max-width: 100vw;
     min-height: 100vh;
     overflow: hidden;
     transition: background .5s;
@@ -63,6 +64,7 @@ textarea {
 
 section { 
     display: flex;
+    max-width: 100vw;
 }
 
 section.scroll-switch-on {

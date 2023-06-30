@@ -43,6 +43,8 @@ html {
 
     --nav-bg: #fffffff1;
 
+    --nav-icon-color: #4d575f;
+
     --nav-shadow: #2cc3ffb7;
 
     --menu-side-bar: #ffffff;
@@ -121,6 +123,8 @@ html {
 
     /* --nav-bg: #161623f6; */
     --nav-bg: #232333f5;
+
+    --nav-icon-color: #6c94ad;
 
     --nav-shadow: #000000b7;
 
@@ -1159,7 +1163,7 @@ footer p,
         text-overflow: ellipsis;
         gap: 5px;
         justify-content: center;
-        color: #4f5d5f;
+        color: var(--nav-icon-color);
     }
 
 
