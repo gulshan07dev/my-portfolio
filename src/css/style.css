@@ -111,8 +111,8 @@ html {
 
     /* --hero-bg: linear-gradient(70deg, #27182f, transparent); */
     /* --hero-bg: linear-gradient(75deg,#000000,#161655,#002875); */
-    --hero-bg: linear-gradient(100deg,#1d2530, #2d2d31, #000000);
-    
+    --hero-bg: linear-gradient(100deg, #1d2530, #2d2d31, #000000);
+
     --right-section-heading: #ff6767;
 
     --dark-icon: #ffffff;
@@ -124,7 +124,7 @@ html {
     /* --nav-bg: #161623f6; */
     --nav-bg: #232333f5;
 
-    --nav-icon-color: #6c94ad;
+    --nav-icon-color: #666d72;
 
     --nav-shadow: #000000b7;
 
@@ -726,7 +726,7 @@ nav .logo {
 /* footer */
 footer {
     background: #08111d;
-    color: #f5deb3; 
+    color: #f5deb3;
     justify-content: space-evenly;
     align-items: center;
     gap: 45px;
@@ -786,7 +786,7 @@ footer p,
 .links {
     flex-direction: column;
     gap: 15px;
-    font-size: 16px; 
+    font-size: 16px;
 }
 
 .links a {
@@ -1088,7 +1088,7 @@ footer p,
         gap: 10px;
         /* background: var(--item-bg); */
     }
- 
+
     .footer-parts {
         flex-direction: column;
     }
@@ -1103,7 +1103,8 @@ footer p,
         padding: 7px;
     }
 
-    footer p, .links li:first-child {
+    footer p,
+    .links li:first-child {
         font-size: 25px;
         letter-spacing: 2px;
     }
@@ -1121,7 +1122,7 @@ footer p,
     }
 
     .arrow-top {
-        font-size: 70px; 
+        font-size: 70px;
         position: relative;
         top: 100px;
         right: 60px;
@@ -1171,16 +1172,15 @@ footer p,
         font-size: 22px;
         transition: 0.1s;
     }
- 
+
     .menu a p {
         font-size: 10px;
         display: inline;
         overflow: hidden;
         text-overflow: ellipsis;
         font-weight: 600;
-        
     }
- 
+
     .menu a.active {
         color: var(--menu-active-color);
         border: none;
