@@ -16,6 +16,7 @@
 
 body {
     background: var(--body-bg);
+    width: 100vw;
     transition: background .5s;
     overflow-x: hidden;
     min-height: 100vh;
@@ -107,7 +108,8 @@ html {
     --body-bg: #161623;
 
     /* --hero-bg: linear-gradient(70deg, #27182f, transparent); */
-    --hero-bg: linear-gradient(75deg,#000000,#161655,#002875);
+    /* --hero-bg: linear-gradient(75deg,#000000,#161655,#002875); */
+    --hero-bg: linear-gradient(100deg,#1d2530, #2d2d31, #000000);
     
     --right-section-heading: #ff6767;
 
@@ -115,7 +117,7 @@ html {
 
     --dark-btn: "\f185";
 
-    --menu-side-bar: #1d232f;
+    --menu-side-bar: #00050e;
 
     /* --nav-bg: #161623f6; */
     --nav-bg: #232333f5;
@@ -971,6 +973,9 @@ footer p,
 
 @media screen and (max-width: 590px) {
 
+    .menu a.active {
+        border: none;
+    }
 
     .left-section {
         padding-top: 15px;
@@ -1137,10 +1142,11 @@ footer p,
         left: 0;
         bottom: 0;
         justify-content: space-evenly;
-        box-shadow: 0 1px 4px #808080;
+        box-shadow: none;
+        border-top: 1px solid #91919177;
         padding: 2px 0;
         width: 100vw;
-        height: 50px;
+        height: 55px;
         transition: 0.8s;
         z-index: 90;
     }
@@ -1153,28 +1159,27 @@ footer p,
         text-overflow: ellipsis;
         gap: 5px;
         justify-content: center;
+        color: #4f5d5f;
     }
 
 
     .menu a i {
-        font-size: 18px;
+        font-size: 22px;
         transition: 0.1s;
     }
-
-    .menu a.active i {
-        font-size: 20px;
-    }
-
+ 
     .menu a p {
-        font-size: 11px;
+        font-size: 10px;
         display: inline;
         overflow: hidden;
         text-overflow: ellipsis;
         font-weight: 600;
+        
     }
-
-    .menu a.active p {
-        font-size: 12px;
+ 
+    .menu a.active {
+        color: var(--menu-active-color);
+        border: none;
     }
 
     #dark-icon {
