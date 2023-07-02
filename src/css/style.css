@@ -42,7 +42,7 @@ html {
 
     --nav-bg: #fffffff1;
 
-    --nav-icon-color: #4d575f;
+    --nav-icon-color: #2d404ff3;
 
     --nav-shadow: #2cc3ffb7;
 
@@ -110,8 +110,8 @@ html {
 
     /* --hero-bg: linear-gradient(70deg, #27182f, transparent); */
     /* --hero-bg: linear-gradient(75deg,#000000,#161655,#002875); */
-    --hero-bg: linear-gradient(100deg,#1d2530, #2d2d31, #000000);
-    
+    --hero-bg: linear-gradient(100deg, #1d2530, #2d2d31, #000000);
+
     --right-section-heading: #ff6767;
 
     --dark-icon: #ffffff;
@@ -123,7 +123,7 @@ html {
     /* --nav-bg: #161623f6; */
     --nav-bg: #232333f5;
 
-    --nav-icon-color: #acaeaf;
+    --nav-icon-color: #d4dbe8;
 
     --nav-shadow: #000000b7;
 
@@ -799,8 +799,15 @@ footer p,
 
 .arrow-top {
     font-size: 70px;
-    color: #ffb1b1;
-    background: none;
+    background: #ffffff;
+    color: #0000ff;
+    border-radius: 50%;
+    padding: 20px;
+    font-size: 25px;
+    height: 60px;
+    width: 60px;
+    font-weight: 400;
+    box-shadow: 1px 1px 7px white, -1px -1px 3px blue;
 }
 
 /* media query */
@@ -978,7 +985,7 @@ footer p,
 
     .menu a.active {
         border: none;
-    } 
+    }
 
     .left-section {
         padding-top: 15px;
@@ -1121,7 +1128,7 @@ footer p,
     }
 
     .arrow-top {
-        font-size: 70px;
+        font-size: 27px;
         position: relative;
         top: 100px;
         right: 60px;
@@ -1145,7 +1152,7 @@ footer p,
         right: 0;
         left: 0;
         bottom: 0;
-        justify-content: space-evenly; 
+        justify-content: space-evenly;
         box-shadow: none;
         border-top: 1px solid #8b8b8b83;
         padding: 2px 0;
@@ -1171,7 +1178,7 @@ footer p,
         font-size: 22px;
         transition: 0.1s;
     }
- 
+
     .menu a p {
         font-size: 10px;
         display: inline;
@@ -1179,9 +1186,9 @@ footer p,
         text-overflow: ellipsis;
         font-weight: 600;
     }
- 
+
     .menu a.active {
-        color: var(--menu-active-color); 
+        color: var(--menu-active-color);
     }
 
     #dark-icon {
